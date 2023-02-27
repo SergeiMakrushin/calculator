@@ -1,0 +1,14 @@
+### Приветствие
+GET http://localhost:8080/order/calculator
+
+### Сумма
+GET  http://localhost:8080/order/calculator/plus?num1=5&num2=5
+
+### Разница
+GET  http://localhost:8080/order/calculator/substraction?num1=5&num2=5
+
+### Произведение
+GET  http://localhost:8080/order/calculator/multiplication?num1=5&num2=5
+
+### Частное
+GET  http://localhost:8080/order/calculator/division?num1=5&num2=0
