@@ -32,7 +32,11 @@ public CalculatorServiseImpl (CalculatorRepository calculatorRepository){
     @Override
     public int division(int num1, int num2) {
         if (num2 == 0) {
-throw new IllegalArgumentException("Деление на ноль");
+            try {
+                throw new Exception("Нельзя делить на 0");
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
         }
         return this.calculatorRepository.division(num1, num2);
     }

@@ -29,17 +29,14 @@ public class CalculatorRepository {
     public int multiplication(int num1, int num2) {
         int multiplication = num1 * num2;
         return multiplication;
-
     }
 
 
     public int division(int num1, int num2) {
 
+
         int division = num1 / num2;
         return division;
 
     }
-
-
 }
-//  return new ResponseEntity<String>( HttpStatus.BAD_REQUEST);
