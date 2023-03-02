@@ -35,6 +35,7 @@ public class CalculatorRepository {
 
     public int division(int num1, int num2) {
 
+
         int division = num1 / num2;
         return division;
 
@@ -42,4 +43,3 @@ public class CalculatorRepository {
 
 
 }
-//  return new ResponseEntity<String>( HttpStatus.BAD_REQUEST);

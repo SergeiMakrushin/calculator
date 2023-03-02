@@ -11,4 +11,4 @@ GET  http://localhost:8080/order/calculator/substraction?num1=5&num2=5
 GET  http://localhost:8080/order/calculator/multiplication?num1=5&num2=5
 
 ### Частное
-GET  http://localhost:8080/order/calculator/division?num1=5&num2=0
+GET  http://localhost:8080/order/calculator/division?num1=5&num2=5
