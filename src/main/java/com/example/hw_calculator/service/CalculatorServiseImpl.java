@@ -1,6 +1,6 @@
-package com.example.calculator.service;
+package com.example.hw_calculator.service;
 
-import com.example.calculator.model.CalculatorRepository;
+import com.example.hw_calculator.model.CalculatorRepository;
 import org.springframework.stereotype.Service;
 @Service
 public class CalculatorServiseImpl implements CalculatorServise {

@@ -1,4 +1,4 @@
-package com.example.calculator.service;
+package com.example.hw_calculator.service;
 
 public interface CalculatorServise {
     String hello();

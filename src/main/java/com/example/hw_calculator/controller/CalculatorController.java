@@ -1,7 +1,6 @@
-package com.example.calculator.controller;
+package com.example.hw_calculator.controller;
 
-import com.example.calculator.service.CalculatorServiseImpl;
-import org.apache.coyote.Response;
+import com.example.hw_calculator.service.CalculatorServiseImpl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

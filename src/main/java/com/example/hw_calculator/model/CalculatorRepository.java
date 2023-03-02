@@ -1,9 +1,6 @@
-package com.example.calculator.model;
+package com.example.hw_calculator.model;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.ErrorResponseException;
 import org.springframework.web.context.annotation.RequestScope;
 
 @Repository

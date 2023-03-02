@@ -1,6 +1,6 @@
-package com.example.calculator;
+package com.example.hw_calculator;
 
-import com.example.calculator.model.CalculatorRepository;
+import com.example.hw_calculator.model.CalculatorRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
