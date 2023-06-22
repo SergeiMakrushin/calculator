@@ -14,9 +14,10 @@ public class CalculatorController {
     }
 
     @ExceptionHandler(value = Exception.class)
-    public ResponseEntity<String>exeptionHandler(Exception e) {
+    public ResponseEntity<String> exeptionHandler(Exception e) {
         return ResponseEntity.badRequest().body(e.getMessage());
     }
+
     @GetMapping("/calculator")
     public String hello() {
 
@@ -33,15 +34,15 @@ public class CalculatorController {
     @GetMapping("/calculator/substraction")
     public String substractionCalculator(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
         int result = calculatorServiseImpl.subtraction(num1, num2);
-        String substraction = num1+" - "+num2+" = "+result;
+        String substraction = num1 + " - " + num2 + " = " + result;
         return substraction;
 
     }
 
     @GetMapping("/calculator/multiplication")
     public String multiplicationCalculator(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
-         int result=calculatorServiseImpl.multiplication(num1, num2);
-        String  multiplication =num1 +" * "+num2+" = "+result;
+        int result = calculatorServiseImpl.multiplication(num1, num2);
+        String multiplication = num1 + " * " + num2 + " = " + result;
         return multiplication;
     }
 

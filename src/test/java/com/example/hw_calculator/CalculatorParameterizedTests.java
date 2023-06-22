@@ -1,6 +1,7 @@
 package com.example.hw_calculator;
 
-import com.example.hw_calculator.model.CalculatorRepository;
+
+import com.example.hw_calculator.service.CalculatorServiseImpl;
 import net.bytebuddy.asm.Advice;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -12,7 +13,7 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalculatorParameterizedTests {
-    private final CalculatorRepository calculatorRepository = new CalculatorRepository();
+    private final CalculatorServiseImpl calculatorServise = new CalculatorServiseImpl();
 
     //    public static Stream<Arguments>
     @ParameterizedTest
@@ -22,8 +23,9 @@ public class CalculatorParameterizedTests {
             "5,0,2"
     })
     void parameterizedTestDivision(int first, int second, int result) {
-        assertEquals(result, calculatorRepository.division(first, second));
+        assertEquals(result, calculatorServise.division(first, second));
     }
+
     @ParameterizedTest
     @CsvSource({
             "6,2,8",
@@ -31,7 +33,7 @@ public class CalculatorParameterizedTests {
             "5,0,5"
     })
     void parameterizedTestSum(int first, int second, int result) {
-        assertEquals(result, calculatorRepository.sum(first, second));
+        assertEquals(result, calculatorServise.sum(first, second));
     }
 
     @ParameterizedTest
@@ -41,7 +43,7 @@ public class CalculatorParameterizedTests {
             "5,0,0"
     })
     void parameterizedTestMultiplication(int first, int second, int result) {
-        assertEquals(result, calculatorRepository.multiplication(first, second));
+        assertEquals(result, calculatorServise.multiplication(first, second));
     }
 
     @ParameterizedTest
@@ -51,7 +53,7 @@ public class CalculatorParameterizedTests {
             "5,0,5"
     })
     void parameterizedTestSubtraction(int first, int second, int result) {
-        assertEquals(result, calculatorRepository.subtraction(first, second));
+        assertEquals(result, calculatorServise.subtraction(first, second));
     }
 
 
